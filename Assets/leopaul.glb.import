@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/landscape1.glb-5fbcb3b10a9ba278088a247cd5282c80.scn"
+path="res://.import/leopaul.glb-07c0b55db65c282cf0e09121d2a4a684.scn"
 
 [deps]
 
-source_file="res://Assets/landscape1.glb"
-dest_files=[ "res://.import/landscape1.glb-5fbcb3b10a9ba278088a247cd5282c80.scn" ]
+source_file="res://Assets/leopaul.glb"
+dest_files=[ "res://.import/leopaul.glb-07c0b55db65c282cf0e09121d2a4a684.scn" ]
 
 [params]
 
