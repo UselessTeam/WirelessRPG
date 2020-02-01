@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Kyumin.glb" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Camera.gd" type="Script" id=3]
+[ext_resource path="res://Prefabs/Environment.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Game.gd" type="Script" id=5]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.237567
+height = 0.900363
+
+[node name="Game" type="Spatial"]
+script = ExtResource( 5 )
+
+[node name="Environment" parent="." instance=ExtResource( 4 )]
+
+[node name="Player" type="KinematicBody" parent="."]
+transform = Transform( 1, 0, 0, -3.55271e-15, 1, 0, 0, 0, 1, 4.58, -1.4455, 8.37 )
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Player"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, -0.0126802, 0.677377, -0.00748383 )
+shape = SubResource( 1 )
+
+[node name="Camera" type="Camera" parent="Player"]
+transform = Transform( -1, 5.65816e-08, -3.20891e-07, -3.55271e-15, 0.984808, 0.173648, 3.25841e-07, 0.173648, -0.984808, -0.17, 1.482, -1.173 )
+current = true
+script = ExtResource( 3 )
+
+[node name="Sprite" parent="Player" instance=ExtResource( 2 )]
+transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0 )

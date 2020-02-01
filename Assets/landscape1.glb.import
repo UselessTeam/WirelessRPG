@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/kinda tree.glb-1cffc353488145331092a727f93d3437.scn"
+path="res://.import/landscape1.glb-5fbcb3b10a9ba278088a247cd5282c80.scn"
 
 [deps]
 
-source_file="res://Assets/kinda tree.glb"
-dest_files=[ "res://.import/kinda tree.glb-1cffc353488145331092a727f93d3437.scn" ]
+source_file="res://Assets/landscape1.glb"
+dest_files=[ "res://.import/landscape1.glb-5fbcb3b10a9ba278088a247cd5282c80.scn" ]
 
 [params]
 

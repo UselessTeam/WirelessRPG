@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/lopol.glb-747d6b2cfe96cb20b1c1c4bc056ed85b.scn"
+path="res://.import/Kyumin.glb-180751b937c6c55206bdd51ffd4b3e5c.scn"
 
 [deps]
 
-source_file="res://Assets/lopol.glb"
-dest_files=[ "res://.import/lopol.glb-747d6b2cfe96cb20b1c1c4bc056ed85b.scn" ]
+source_file="res://Assets/Kyumin.glb"
+dest_files=[ "res://.import/Kyumin.glb-180751b937c6c55206bdd51ffd4b3e5c.scn" ]
 
 [params]
 
