@@ -25,13 +25,13 @@ func _input(event):
  
 func _physics_process(delta):
 	var move_vec = Vector3()
-	if Input.is_action_pressed("move_forwards"):
+	if Input.is_action_pressed("up"):
 		move_vec.z -= delta
-	if Input.is_action_pressed("move_backwards"):
+	if Input.is_action_pressed("down"):
 		move_vec.z += delta
-	if Input.is_action_pressed("move_right"):
+	if Input.is_action_pressed("right"):
 		move_vec.x += delta
-	if Input.is_action_pressed("move_left"):
+	if Input.is_action_pressed("left"):
 		move_vec.x -= delta
 	move_vec = move_vec.normalized()
 	move_vec = move_vec.rotated(Vector3(0, 1, 0), rotation.y)
