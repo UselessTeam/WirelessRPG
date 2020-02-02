@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/gobling.tscn" type="PackedScene" id=1]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.998248, -0.0126377, 0.0578017, 0, 0.976923, 0.213593, -0.0591671, -0.213219, 0.975211, 0.54655, 1.23269, 2.66613 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.66204, -0.0506478, 0.747755, -0.649163, 0.459866, 0.605897, -0.374554, -0.886543, 0.271571, 2.53956, 3.17314, 1.00982 )
+
+[node name="gobling" parent="." instance=ExtResource( 1 )]
