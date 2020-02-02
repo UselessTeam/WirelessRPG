@@ -22,27 +22,33 @@ func _ready():
 	get_tree().connect('network_peer_disconnected', self, '_on_player_disconnected')
 	get_tree().connect('network_peer_connected', self, '_on_player_connected')
 
+func start_server():
+	self_data.name = "host"
+	print("Creating server")
+	var peer = NetworkedMultiplayerENet.new()
+	peer.create_server(DEFAULT_PORT, MAX_PLAYERS)
+	get_tree().set_network_peer(peer)
+	control_my_player()
+	players[1] = self_data.position
+	server_started = true
+
+func join_server():
+	print("Joining server")
+	self_data.name = "client"
+	get_tree().connect('connected_to_server', self, '_connected_to_server')
+	var peer = NetworkedMultiplayerENet.new()
+	peer.create_client(DEFAULT_IP, DEFAULT_PORT)
+	get_tree().set_network_peer(peer)
+	server_started = true
+
 func _input(event):
 	if !server_started:
 		if event.is_action_pressed("make_server"):
-			self_data.name = "host"
-			print("Creating server")
-			var peer = NetworkedMultiplayerENet.new()
-			peer.create_server(DEFAULT_PORT, MAX_PLAYERS)
-			get_tree().set_network_peer(peer)
-			control_my_player()
-			players[1] = self_data.position
-			server_started = true
+			start_server()
 	
 		if event.is_action_pressed("connect_server"):
-			print("Joining server")
-			self_data.name = "client"
-			get_tree().connect('connected_to_server', self, '_connected_to_server')
-			var peer = NetworkedMultiplayerENet.new()
-			peer.create_client(DEFAULT_IP, DEFAULT_PORT)
-			get_tree().set_network_peer(peer)
-			server_started = true
-
+			join_server()
+			
 func _connected_to_server():
 	control_my_player();
 	rpc('spawn_player', get_server_id(), self_data.position)

@@ -23,10 +23,6 @@ config/icon="res://icon.png"
 
 Network="*res://Scripts/Network.gd"
 
-[display]
-
-window/stretch/mode="viewport"
-
 [input]
 
 ui_accept={
