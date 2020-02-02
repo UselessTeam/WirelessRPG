@@ -3,6 +3,7 @@
 .mono/
 export.cfg
 export_presets.cfg
+Assets/Build
 
 # Models
 *.gltf

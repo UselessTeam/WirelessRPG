@@ -37,7 +37,7 @@ func _physics_process(delta):
 		move_vec *= MOVE_SPEED
 		move_vec.y = y_velo
 		move_and_slide(move_vec, Vector3(0, 1, 0))
-   
+
 		var grounded = is_on_floor()
 		y_velo -= GRAVITY
 		var just_jumped = false
@@ -48,7 +48,7 @@ func _physics_process(delta):
 			y_velo = -0.1
 		if y_velo < -MAX_FALL_SPEED:
 			y_velo = -MAX_FALL_SPEED
-	   
+
 		if just_jumped:
 			play_anim("Run")
 		elif grounded:
@@ -56,16 +56,14 @@ func _physics_process(delta):
 				play_anim("Idle")
 			else:
 				play_anim("Walk")
-		
+
 		if (Network.server_started):
 			rset('puppet_position', translation)
 	else:
 		translation = puppet_position
-	
+
 	if Network.server_started && get_tree().is_network_server():
 		Network.update_position(int(name), translation)
-	if Network.server_started && !get_tree().is_network_server():
-		print("Pos Is ",int(name)," ", translation)
 		
 func play_anim(name):
 	if anim.current_animation == name:

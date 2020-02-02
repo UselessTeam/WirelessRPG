@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/hedgehog.gltf-cf36157e142a131280c4fde9cd94bf30.scn"
+path="res://.import/Mushrooms.glb-6199c5ef6fcfc24190ec2d70be141227.scn"
 
 [deps]
 
-source_file="res://Assets/hedgehog.gltf"
-dest_files=[ "res://.import/hedgehog.gltf-cf36157e142a131280c4fde9cd94bf30.scn" ]
+source_file="res://Assets/Meshes/Mushrooms.glb"
+dest_files=[ "res://.import/Mushrooms.glb-6199c5ef6fcfc24190ec2d70be141227.scn" ]
 
 [params]
 

@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Prefabs/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Models/Gobling.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Prefabs/Environment.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scripts/Game.gd" type="Script" id=5]
-[ext_resource path="res://Assets/mushrooms.glb" type="PackedScene" id=8]
 
 [node name="Game" type="Spatial"]
 script = ExtResource( 5 )
@@ -18,9 +17,6 @@ light_color = Color( 0.827451, 0.00392157, 0.00392157, 1 )
 directional_shadow_max_distance = 117.0
 
 [node name="Environment" parent="." instance=ExtResource( 4 )]
-
-[node name="mushrooms" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0327, 6.083, -6.63428 )
 
 [node name="gobling" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1472, -5.25764, 2.10873 )

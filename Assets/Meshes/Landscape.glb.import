@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Kyuminbig.glb-7463dbc3e4c316c9c649e7d63eeb7ee1.scn"
+path="res://.import/Landscape.glb-4a0ee795fdbe15713b9fbbb859e92e58.scn"
 
 [deps]
 
-source_file="res://Assets/Kyuminbig.glb"
-dest_files=[ "res://.import/Kyuminbig.glb-7463dbc3e4c316c9c649e7d63eeb7ee1.scn" ]
+source_file="res://Assets/Meshes/Landscape.glb"
+dest_files=[ "res://.import/Landscape.glb-4a0ee795fdbe15713b9fbbb859e92e58.scn" ]
 
 [params]
 

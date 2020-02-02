@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/gapple.glb-a4cda56d7d1311d916575007d2449a0a.scn"
+path="res://.import/House1.glb-35dcd8815bb6c7a9e324b6805af65e2b.scn"
 
 [deps]
 
-source_file="res://Assets/gapple.glb"
-dest_files=[ "res://.import/gapple.glb-a4cda56d7d1311d916575007d2449a0a.scn" ]
+source_file="res://Assets/Meshes/House1.glb"
+dest_files=[ "res://.import/House1.glb-35dcd8815bb6c7a9e324b6805af65e2b.scn" ]
 
 [params]
 

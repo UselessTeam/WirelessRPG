@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/landscape.glb-5298dea1e84a11d5752973787c133909.scn"
+path="res://.import/gobling.glb-c49c086add11f8fdde026444bad92771.scn"
 
 [deps]
 
-source_file="res://Assets/landscape.glb"
-dest_files=[ "res://.import/landscape.glb-5298dea1e84a11d5752973787c133909.scn" ]
+source_file="res://Assets/Meshes/gobling.glb"
+dest_files=[ "res://.import/gobling.glb-c49c086add11f8fdde026444bad92771.scn" ]
 
 [params]
 

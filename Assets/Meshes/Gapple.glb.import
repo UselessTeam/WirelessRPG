@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Kyumin.glb-180751b937c6c55206bdd51ffd4b3e5c.scn"
+path="res://.import/Gapple.glb-6a995599a4ce7fa7cb9d48cff5a0fec8.scn"
 
 [deps]
 
-source_file="res://Assets/Kyumin.glb"
-dest_files=[ "res://.import/Kyumin.glb-180751b937c6c55206bdd51ffd4b3e5c.scn" ]
+source_file="res://Assets/Meshes/Gapple.glb"
+dest_files=[ "res://.import/Gapple.glb-6a995599a4ce7fa7cb9d48cff5a0fec8.scn" ]
 
 [params]
 
