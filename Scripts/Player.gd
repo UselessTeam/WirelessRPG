@@ -57,12 +57,13 @@ func _physics_process(delta):
 			else:
 				play_anim("Walk")
 		
-		if (Network.server_started):
-			assert(is_network_master())
+		if (Network.server_started && Network.server_id!=1):
 			rset('puppet_position', translation)
-		# rset('puppet_movement', direction)
 	else:
 		translation = puppet_position
+	
+	if get_tree().is_network_server():
+		Network.update_position(int(name), translation)
 		
 		
 func play_anim(name):
