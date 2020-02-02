@@ -25,9 +25,6 @@ shader_param/rim_softness = 0.0
 
 [node name="gobling" instance=ExtResource( 2 )]
 
-[node name="Skeleton" parent="rig" index="0"]
-bones/64/bound_children = [ NodePath("BoneAttachment") ]
-
 [node name="Gobling" parent="rig/Skeleton" index="0"]
 transform = Transform( 0.981942, 0, -0.189181, 0, 1, 0, 0.189181, 0, 0.981942, 0, 0, 0 )
 material/0 = SubResource( 1 )

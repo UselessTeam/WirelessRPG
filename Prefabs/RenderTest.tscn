@@ -1,6 +1,10 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Assets/gobling.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Models/Gobling.tscn" type="PackedScene" id=1]
+
+
+
+
 
 [node name="Spatial" type="Spatial"]
 
