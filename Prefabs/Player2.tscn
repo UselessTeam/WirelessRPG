@@ -1,19 +1,19 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Kyumin.glb" type="PackedScene" id=2]
+[ext_resource path="res://Assets/leopaul.glb" type="PackedScene" id=2]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.330349
-height = 0.552146
+height = 2.31523
 
 [node name="Player" type="KinematicBody"]
 transform = Transform( 1, 0, 0, -3.55271e-15, 1, 0, 0, 0, 1, 4.58, -1.4455, 8.37 )
 script = ExtResource( 1 )
 
-[node name="Sprite" parent="." instance=ExtResource( 2 )]
-transform = Transform( 0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0 )
-
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.361408, 0 )
+transform = Transform( 1, 0, 0, 3.38282e-15, 0.0478212, 0.998856, 3.54865e-15, -0.998856, 0.0478212, 0, 1.34167, 0 )
 shape = SubResource( 1 )
+
+[node name="Sprite" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.2, -1.4647e-16, 0, 1.4647e-16, 0.2, 0, 0, 0, 0.2, 0, 1.5, 0 )
